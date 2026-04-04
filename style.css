@@ -29,6 +29,13 @@
 
 }
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+section{
+    margin-top: 130px;
+}
 
 /* header styler */
 
@@ -83,7 +90,116 @@
     margin-bottom: 45px;
 }
 
+/* main section */
 
+/* team and feature section */
+
+.team {
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.features{
+    margin-left: 73px;
+    max-width: 537px;
+}
+.Quick-list{
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: #727272;
+}
+.of-Our{
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: #131313;
+}
+#Features{
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: #FF900E;
+}
+.features-description{
+    font-weight: 400;
+    font-size: 1 rem;
+    color: #727272;
+}
+/* fact container section */
+.facts-title{
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: #131313;
+}
+.facts-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+    max-width: 542px;
+}
+
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+
+}
+
+.fact-card{
+    border: 1px solid#FF900E;
+    width: 241px;
+    height: 241px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fact-number{
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #424242;
+}
+.fact-name{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #727272;
+    margin-bottom: 10px;
+
+}
+
+
+
+/* responsive media query  */
+@media screen and (max-width: 576px){
+    .navbar,.nav-links, .team {
+        flex-direction: column;
+    }
+
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .features{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width : 992px){
+    .teams{
+        flex-direction: column;
+    }
+    .features{
+        margin: 50px auto;
+    }
+
+}
 
 
 
