@@ -37,6 +37,11 @@ section{
     margin-top: 130px;
 }
 
+.footer-sec{
+    max-width: 1440px;
+}
+
+
 /* header styler */
 
 /* navbar related style */
@@ -127,6 +132,7 @@ section{
     font-size: 1 rem;
     color: #727272;
 }
+
 /* fact container section */
 
 .facts-title{
@@ -176,7 +182,7 @@ section{
 
 }
 
-/* our-sec-features */
+/* features section  */
 
 
 .our-sec-features{
@@ -226,8 +232,21 @@ section{
     color: #727272;
 }
 
+#exp-badge{
+    padding: 45px 42px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left:-100px;
+    margin-top: -100px;
+}
+#exp-year{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.feature-architect img {
+    width: 100%;
 
-
+}
 
 
 
@@ -262,12 +281,27 @@ section{
     filter: grayscale(100%);
 }
 
+/* footer section */
+
+.footer-sec{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #424242;
+    padding: 39px 410px;
+    margin: 130px 240px 216px 240px;
+    text-align: center;
+    background-color: rgba(255, 244, 231, 1);
+    border-radius: 8px;
+
+
+}
+
 
 
 /* responsive media query  */
 
 @media screen and (max-width: 576px){
-    .navbar,.nav-links, .team {
+    .navbar,.nav-links, .team, .our-sec-features {
         flex-direction: column;
     }
 
@@ -289,15 +323,17 @@ section{
     .features{
         margin-left: 20px;
     }
+
+    #exp-badge{
+        margin-top:20px;
+        margin-left:20px;
+    }
 }
 
 
 
-
-
-
 @media screen and (min-width:576px) and (max-width : 992px){
-    .teams{
+    .teams , .our-sec-features{
         flex-direction: column;
     }
     .features{
@@ -307,6 +343,13 @@ section{
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
         justify-items: center;
+    }
+    
+    #exp-badge{
+        margin-top:50px;
+        margin-left:50px;
+        margin-bottom: 50px;
+        margin-right: 50px;
     }
 
 }
